@@ -1,0 +1,146 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video-grid
+{
+    display: flex;
+    justify-content: center;
+}
+
+video
+{
+    height: 300px;
+    width: 400px;
+}
+
+.main 
+{
+    height: 100vh;
+    display: flex;
+
+}
+.main_left
+{
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+}
+.main_right
+{
+    flex: 0.23;
+    display: flex;
+    flex-direction: column;
+    background-color: #242324d2;
+}
+.main_video
+{
+    flex-grow: 1; /*tell us how the elements inside them grow*/
+    background-color: rgb(19 18 18 / 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_controls
+{
+    /* background-color: rgb(32, 23, 0); */
+    display: flex;
+    background-color: #1C1E20;
+    color: white;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_controls_block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_controls_block_right
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    
+
+}
+.main_controls_button
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.main_controls_button i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left 
+{
+    background-color: red;
+    color: white;
+    height: 2rem ;
+    width: 9rem;
+    border: solid black 2px;
+    border-radius: 6px;
+    font-size: 1rem;
+    
+}
+.left:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+  
+}
+.main_header
+{
+    color: aliceblue;
+    text-align: center;
+    padding: 6px;
+}
+
+.main_chat_window
+{
+    flex-grow: 1; /*the are wher msg will be shown wil automically take space*/
+    /* color: white; */
+    overflow-y: scroll;
+}
+
+.main_message_container
+{
+    padding: 22px 14px;
+    width: 100%;
+}
+
+.main_message_container input
+{
+    width: 100%;
+    flex-grow: 1;
+    background: transparent;
+    height: 2rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+
+
+::placeholder
+{
+    color:azure;
+    text-align: center;
+}
+
+.message 
+{
+    color: aliceblue;
+    list-style: none;
+}
